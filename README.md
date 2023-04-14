@@ -10,7 +10,7 @@ xRcx: a pair of sub-sequences x and y, with y = Rc(x).
 replace sequence: {A,T,C,G} ——> {T,A,G,C}. For example replace of x: TGTAGACT. (the replace rule not unique)
 
 1.avoid_bases.
-Count all m-xRcx. For example, when m = 2, m-xRcx: \\
+Count all m-xRcx. For example, when m = 2, m-xRcx: 
                 all x :        AA AC AG CA CC GA\\
                 all Rc(x) :    TT GT CT TG GG TC\\
                 
