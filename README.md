@@ -3,15 +3,23 @@ This project is a record of the search processes for DNA secondary structure avo
 
 Notation:
 
-sequence: DNA string over D={A,C,G,T}. For example x = ACATCTGA.
+sequence: DNA string over D={A,C,G,T}. 
 
-m_subsequence: sub-sequence x length of m. For example m = 3. a sub-sequence y = ACA.
+                For example x = ACATCTGA.
 
-Rc(x): reverse complementary sequence of x with Watson-Crick(A-T,T-A,C-G,G-C). For example Rc(x) = TCAGATGT.
+m_subsequence: sub-sequence x length of m. 
+
+                For example m = 3. a sub-sequence y = ACA.
+
+Rc(x): reverse complementary sequence of x with Watson-Crick(A-T,T-A,C-G,G-C). 
+                
+                For example Rc(x) = TCAGATGT.
 
 xRcx: a pair of sub-sequences x and y, with y = Rc(x).
 
-replace sequence: {A,T,C,G} ——> {T,A,G,C}. For example replace of x: TGTAGACT. (the replace rule not unique)
+replace sequence: {A,T,C,G} ——> {T,A,G,C}. 
+                
+                For example replace of x: TGTAGACT. (the replace rule not unique)
 
 1.avoid_bases.
 
