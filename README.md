@@ -20,15 +20,24 @@ Count all m-xRcx. For example, when m = 2, m-xRcx:
                 all x :        AA AC AG CA CC GA
                 all Rc(x) :    TT GT CT TG GG TC
                 
-Select any one of xRcx according the rules. For example:
+Select any one of xRcx according the rules. For example: we get a set of m-sub-sequences: {AA, GT, AG, TG, CC, GA}.
 
                 all x :        AA    AG    CC GA
                 all Rc(x) :       GT    TG             
-                
-we get a set of m-sub-sequences: {AA, GT, AG, TG, CC, GA}.
-
+            
 Construct a state transition matrix based on all selected sequences.
+
+                  AA GT AG TG CC GA
+              AA  1  0  1  0  0  0
+              GT  0  0  0  1  0  0
+              AG  0  1  0  0  0  1
+              TG  0  1  0  0  0  1
+              CC  0  0  0  0  1  0
+              GA  1  0  1  0  0  0
+
 Count the matrix maximum eigenvalue.
+
+              max_eigenvalue： 1.801937735804836072
 
 2.delete_replacement.
 
